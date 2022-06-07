@@ -34,7 +34,6 @@ steps:
 
   - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
     echo `env`
     echo "Variable " + $GIT_REPO + $GIT_BRANCH
     displayName: 'Run a multi-line script'
