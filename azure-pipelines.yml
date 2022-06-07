@@ -9,6 +9,10 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  PIP_CACHE_DIR: $(Pipeline.Workspace)/.pip
+
+
 steps:
   - task: UsePythonVersion@0
     inputs:
