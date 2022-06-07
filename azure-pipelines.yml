@@ -36,6 +36,11 @@ steps:
   - script: pip install -r requirements.txt
     displayName: 'Install dependencies'
 
+  - script: |
+      echo "Environment"
+      echo `env`
+    displayName: 'Environment display'
+
  # - script: |
  ##     echo Add other tasks to build, test, and deploy your project.
   #    echo `env`
