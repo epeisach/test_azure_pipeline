@@ -33,7 +33,7 @@ steps:
     displayName: 'Install dependencies'
 
   - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo `env`
-    echo "Variable " + $GIT_REPO + $GIT_BRANCH
+      echo Add other tasks to build, test, and deploy your project.
+      echo `env`
+      echo "Variable " + $GIT_REPO + $GIT_BRANCH
     displayName: 'Run a multi-line script'
