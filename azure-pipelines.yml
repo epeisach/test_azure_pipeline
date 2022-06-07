@@ -21,7 +21,7 @@ steps:
 
   - checkout: self
 
-  - script: python -m pip install --upgrade pip tox wheel
+  - script: python -m pip install --upgrade pip wheel
     displayName: 'Install tools'
 
   - task: Cache@2
