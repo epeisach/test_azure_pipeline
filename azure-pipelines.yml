@@ -39,6 +39,7 @@ steps:
   - script: |
       echo "Environment"
       echo `env`
+      echo "Variable " + $GIT_REPO + $GIT_BRANCH + $GIT_SHA + $GIT_ACTOR
     displayName: 'Environment display'
 
  # - script: |
