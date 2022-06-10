@@ -23,7 +23,7 @@ def main():
     if api is None or deploy_url is None or repository is None:
         print("X", api)
         print("X", deploy_url)
-        print("X", deploy_repository)
+        print("X", repository)
         print("Environment not set - no request")
         return
 
