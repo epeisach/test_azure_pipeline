@@ -34,7 +34,7 @@ def main():
         "actor": actor,
         "sha1": sha1
     }
-    ret = requests.post(url + "/update", json=tdata)
+    ret = requests.post(deploy_url + "/update", json=tdata)
     print(ret.text)
 
 
