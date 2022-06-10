@@ -8,15 +8,11 @@ import sys
 
 import requests
 
-print(os.environ)
-
-print("Api key len is", len(api))
-print("Api key is ", api)
 
 def main():
     """Triggers update request"""
 
-    api = os.environ.get("API_KEY")
+    api = os.environ.get("DEPLOY_API_KEY")
     deploy_url = os.environ.get("DEPLOY_HOST_URL")
     repository = os.environ.get("GIT_REPO")
     branch = os.environ.get("GIT_BRANCH")
