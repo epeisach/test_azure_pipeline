@@ -21,6 +21,9 @@ def main():
     owner = os.environ.get("GIT_OWNER")    
 
     if api is None or deploy_url is None or repository is None:
+        print("X", api)
+        print("X", deploy_url)
+        print("X", deploy_repository)
         print("Environment not set - no request")
         return
 
@@ -31,7 +34,7 @@ def main():
         "actor": actor,
         "sha1": sha1
     }
-    ret = requests.post(url, json=tdata)
+    ret = requests.post(url + "/update", json=tdata)
     print(ret.text)
 
 
