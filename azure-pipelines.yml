@@ -7,14 +7,14 @@ trigger:
 - main
 
 jobs:
-  -job: 'Deploy update'
+  - job: 'Deploy update'
     pool:
       vmImage: ubuntu-latest
 
-   variables:
+    variables:
       PIP_CACHE_DIR: $(Pipeline.Workspace)/.pip
 
-   steps:
+    steps:
     - task: UsePythonVersion@0
       inputs:
         versionSpec: '3.x'
