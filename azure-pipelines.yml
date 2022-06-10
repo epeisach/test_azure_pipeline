@@ -46,6 +46,6 @@ jobs:
     - script: |
         python trigger_deploy.py
       env:
-        API_KEY: $(DEPLOY_API_KEY)
+        DEPLOY_API_KEY: $(DEPLOY_API_KEY)
         DEPLOY_HOST_URL: $(DEPLOY_HOST_URL)
       displayName: "Trigger update"
